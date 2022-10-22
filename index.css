@@ -1,0 +1,58 @@
+body {
+  background-image: url("./assets/race_track.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-color: rgb(252, 246, 246);
+}
+
+img {
+  height: 200px;
+  width: 200px;
+}
+
+body {
+  height: 100vh;
+}
+
+.about__wrapper--img {
+  border-radius: 999px;
+  width: 100px;
+  height: 100px;
+  animation: orbit-reverse 8000ms linear infinite;
+}
+
+.rotator {
+  height: 550px;
+  width: 550px;
+  animation: orbit 8000ms linear infinite;
+}
+
+.rotator__wrapper {
+  transform: translateX(70px);
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  right: 46%;
+  top: 18%;
+}
+
+@keyframes orbit {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes orbit-reverse {
+  0% {
+    transform: rotate(-360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
